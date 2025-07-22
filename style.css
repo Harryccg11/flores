@@ -1983,3 +1983,55 @@ body {
     opacity: 1;
   }
 }
+
+/* Romantic messages styles for Rosario */
+.romantic-messages {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.main-message {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 3.5vmin;
+  color: #e6f331;
+  text-shadow: 2px 2px 10px rgba(230, 243, 49, 0.7), 0 0 20px rgba(230, 243, 49, 0.5);
+  margin-bottom: 20px;
+  animation: gentle-glow 3s ease-in-out infinite alternate;
+  font-weight: bold;
+}
+
+.love-quote {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2.2vmin;
+  color: #ffffff;
+  text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.3);
+  font-style: italic;
+  line-height: 1.4;
+  animation: soft-pulse 4s ease-in-out infinite;
+  opacity: 0.9;
+}
+
+@keyframes gentle-glow {
+  0% {
+    text-shadow: 2px 2px 10px rgba(230, 243, 49, 0.7), 0 0 20px rgba(230, 243, 49, 0.5);
+  }
+  100% {
+    text-shadow: 2px 2px 15px rgba(230, 243, 49, 0.9), 0 0 30px rgba(230, 243, 49, 0.7);
+  }
+}
+
+@keyframes soft-pulse {
+  0%, 100% {
+    opacity: 0.9;
+    text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 1px 1px 12px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.5);
+  }
+}
